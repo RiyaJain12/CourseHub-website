@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <head>
+    <style>
+        .navbar {
+            background-color: rgb(77, 154, 83);
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Course Hub</a></li>
+                <li><a href="#"></a></li>
+                <div class="search">
+                    <button id="admin-user">XYZ(Admin)</button>
+                    <button onclick="funcLogout()">Logout</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="table">
+        <table border="1" id="table-id">
+            <tr>
+                <!-- <th>
+                    user name
+                </th>
+                <th>
+                    User Mail-id
+                </th>
+                <th>
+                    HTML-Course
+                </th>
+                <th>
+                    CSS Course
+                </th>
+                <th>
+                    JS Course
+                </th> -->
+            </tr>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <script>
+        function funcLogout() {
+            window.location.href = "Login.html";
+        }
+        document.getElementById('admin-user').innerHTML=sessionStorage.getItem('email');
+    </script> -->
+<script src="./Admin.js"></script>
+</html>

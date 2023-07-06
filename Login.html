@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Please login</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-success">
+  <div class="container">
+    <h1 class="text-center">Login Page</h1>
+    <div class="col-md-8 col-md-offset-2">
+      <br />
+      Enter Email:
+      <input type="text" class="form-control" name="" id="email" /><br />
+      Enter Pass:
+      <input type="text" class="form-control" name="" id="pass" /><br />
+      Sign Up As :
+      <br /><br />
+      <div name="dd">
+        <label for="">Admin</label>
+        <input name="radiobtn" value="Admin" type="radio" />
+        &nbsp;&nbsp;
+        <label for="">Student</label>
+        <input name="radiobtn" value="Student" checked="checked" type="radio" />
+      </div>
+      <br>
+      Not Registered ?
+      <input type="button"  value="Signup" onclick="funcSignup()" class=" btn btn-primary">
+      <br><br>
+      <button type="button" onclick="login()" class="form-control btn btn-primary">
+        Login
+      </button>
+    </div>
+  </div>
+  
+  <script src="login.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

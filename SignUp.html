@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SignUp Page</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-success">
+    <div class="container">
+        <h1 class="text-center">Please Signup</h1>
+
+        <div class="col-md-8 col-md-offset-2">
+            <br />
+            Enter Name :
+            <input type="text" class="form-control" name="" id="name" />
+            <span id="name-span" style="color: red; font-weight: bold"></span>
+            <br />
+            Enter Age:
+            <input type="text" class="form-control" name="" id="age" /><br />
+            <span id="age-span"></span>
+            Enter Mobile no.:
+            <input type="text" class="form-control" name="" id="mobile" />
+            <span id="mobile-span"></span>
+            <br />
+            Enter Email *:
+            <input type="text" class="form-control" name="" id="email" />
+            <span id="email-span" style="color: red; font-weight: bold"></span>
+            <br />
+            Enter Password:
+            <input type="password" class="form-control" name="" id="pass" />
+            <span id="pass-span"></span>
+            <br />
+            Enter Confirm Password:
+            <input type="password" class="form-control" name="" id="conpass" />
+            <span></span>
+            <br />
+            Sign Up As :
+            <br /><br />
+            <div name="dd">
+                <label for="">Admin</label>
+                <input name="radiobtn" value="Admin" type="radio" />
+                &nbsp;&nbsp;
+                <label for="">Student</label>
+                <input name="radiobtn" value="Student" type="radio" checked="checked" />
+            </div>
+            <br>
+            Already a user:
+            <button onclick="window.location.href='Login.html'" class=" btn btn-primary">Login</button>
+            <br><br>
+            <button type="button" onclick="signup()" class="form-control btn btn-primary">
+                SignUp
+            </button>
+        </div>
+    </div>
+
+    <script src="./signup.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

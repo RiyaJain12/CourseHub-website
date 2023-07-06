@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Courses</title>
+    <style>
+        .navbar {
+            background-color: rgb(77, 154, 83);
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Course Hub</a></li>
+                <li><a href="#"></a></li>
+                <div class="search">
+                    <button id="show-user">XYZ(User)</button>
+                    <button onclick="funcLogout()">Logout</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <span id="html" width="20px"></span>
+        <span id="css" width="20px"></span>
+        <span id="js" width="20px"></span>
+
+    </div>
+    <script>
+      
+window.onload = function () {
+    console.log('onload');
+    let strArr = JSON.parse(localStorage.getItem("string"));
+    let email = sessionStorage.getItem('email');
+    let pass = sessionStorage.getItem('pass');
+    for (let i of strArr) {
+        console.log(email, ' innn');
+        if(i.email1==email && i.pass1 == pass)
+        {
+            document.getElementById('show-user').innerText = email;
+            if (i.htmlCourse == "1"){
+                document.getElementById('html').innerHTML = '<img src="./images/html" alt="problem arrise" style="width: 200px">';
+            }
+            if (i.cssCourse == "1"){
+                document.getElementById('css').innerHTML = '<img src="./images/css" alt="problem arrise" style="width: 200px">';
+            }
+            if (i.jsCourse == "1"){
+                document.getElementById('js').innerHTML = '<img src="./images/js" alt="problem arrise" style="width: 200px">';
+            }
+        }
+    }
+}
+
+    </script>
+    <script src="./login.js"></script>
+    </body>
+
+</html>
